@@ -1,0 +1,571 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Galada&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/f2cd7f1e53.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Portfolio Page</title>
+  </head>
+  <body>
+  
+
+
+    <div class="container center">
+      <div class="column nav">
+        <div onclick="showModal()" class="menu">
+          <div  class="menuButton"></div>
+          <i class="fas fa-bars" style="font-size: 25px;"></i>
+        </div>
+        <div class="menuItem">
+          <a> </a>
+
+          <ul>
+            <li>
+              <a
+                onclick="showPage('one', ['two', 'three', 'four', 'five'])"
+                href="#one"
+              >
+                <i
+                  onclick="showPage('one', ['two', 'three', 'four', 'five'])"
+                  href="#one"
+                  id="menu-one"
+                  style="color: #44b1b1;"
+                  class="fas fa-user menuIcon"
+                ></i>
+              </a>
+            </li>
+            <li>
+              <a
+                onclick="showPage('two', ['one', 'three', 'four', 'five'])"
+                href="#two"
+              >
+                <i
+                  onclick="showPage('two', ['one', 'three', 'four', 'five'])"
+                  href="#two"
+                  id="menu-two"
+                  class="fas fa-tools menuIcon"
+                ></i>
+              </a>
+            </li>
+            <li>
+              <a
+                onclick="showPage('three', ['one', 'two', 'four', 'five'])"
+                href="#three"
+              >
+                <i
+                  onclick="showPage('three', ['one', 'two', 'four', 'five'])"
+                  href="#three"
+                  id="menu-three"
+                  class="fas fa-briefcase menuIcon"
+                ></i>
+              </a>
+            </li>
+            <li>
+              <a
+                onclick="showPage('four', ['one', 'two', 'three', 'five'])"
+                href="#four"
+              >
+                <i
+                  onclick="showPage('four', ['one', 'two', 'three', 'five'])"
+                  href="#four"
+                  id="menu-four"
+                  class="fas fa-laptop menuIcon"
+                ></i>
+              </a>
+            </li>
+            <li>
+              <a
+                onclick="showPage('five', ['one', 'two', 'three', 'four'])"
+                href="#five"
+              >
+                <i
+                  onclick="showPage('five', ['one', 'two', 'three', 'four'])"
+                  href="#one"
+                  id="menu-five"
+                  class="fas fa-envelope menuIcon"
+                ></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="column picture">
+        <div class="caption">
+            <h1 style="color: #fff;">Romo Islam</h1>
+            <h2 style="color: #44b1b1; font-size: 20px;"> Developer | Designer | Digital Content Creator</h2>
+
+        </div>
+      </div>
+      <div class="column content">
+        <section class="contentSection" id="one">
+          <div class="innerContainer">
+            <div class="scrollview">
+              <div class="innerContent">
+                <section>
+                  <h1>
+                    About Me
+                  </h1>
+                  <p>
+                    Lorem Ipsum is simply dummy text release of Letraset sheets
+                    containing Lorem Ipsum passages, and more recently with
+                    desktop publishing software like Aldus PageMaker including
+                    versions of Lorem Ipsum. Lorem Ipsum is simply dummy text
+                    release of Letraset sheets containing Lorem Ipsum passages,
+                    and more recently with desktop publishing software like
+                    Aldus PageMaker including versions of Lorem Ipsum.
+                  </p>
+
+                  <div
+                    class="button"
+                    onclick="showPage('two', ['one', 'three', 'four', 'five'])"
+                  >
+                    <a href="#two">My Skills</a>
+                  </div>
+
+                  <h1>
+                    My Education
+                  </h1>
+                  <p>
+                    Lorem Ipsum is simply dummy text release of Letraset sheets
+                    containing Lorem Ipsum passages, and more recently with
+                    desktop publishing software like Aldus PageMaker including
+                    versions of Lorem Ipsum.
+                  </p>
+                </section>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="contentSection" id="two" style="display: none;">
+          <div class="innerContainer">
+            <div class="scrollview">
+              <div class="innerContent">
+                <section>
+                  <h1>
+                    My Skills
+                  </h1>
+                  <h2><i class="fas fa-laptop-code"></i> Web Development</h2>
+                  <div class="skillsBar">
+                    <div class="barProgress"></div>
+                  </div>
+                  <h2><i class="fas fa-pencil-alt"></i> UI/UX Design</h2>
+                  <div class="skillsBar">
+                    <div class="barProgress"></div>
+                  </div>
+                  <h2><i class="fas fa-laptop-code"></i> Graphic Design</h2>
+                  <div class="skillsBar">
+                    <div class="barProgress"></div>
+                  </div>
+                  <h2><i class="fas fa-mobile-alt"></i> Mobile Development</h2>
+                  <div class="skillsBar">
+                    <div class="barProgress"></div>
+                  </div>
+                  <h2><i class="fas fa-database"></i> Database Hosting</h2>
+                  <div class="skillsBar">
+                    <div class="barProgress"></div>
+                  </div>
+
+                  <div
+                  style="margin-top: 60px;"
+                  class="button"
+                  onclick="showPage('three', ['one', 'two', 'four', 'five'])"
+                >
+                  <a href="#two">My Projects</a>
+                </div>
+
+                </section>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="contentSection" id="three" style="display: none;">
+          <div class="innerContainer">
+            <div class="scrollview">
+              <div class="innerContent">
+                <section>
+                  <h1>
+                    My Portfolio
+                  </h1>
+
+                  <div class="portfolioItem">
+                      <img class="portfolioWeb" src="./img/portfolio/1.png" alt="">
+                      <div class="title">
+                          <h2>
+                          Acctech LLC
+                        </h2>
+                        </div>
+                      <!-- <div style="width: 30%;" class="column title">
+                        <h2>Acctech LLC</h2>
+                        
+                    </div>
+                    <div style="width: 60%;" class="column description">
+                        <h2>Got to Site</h2>
+                    </div> -->
+              
+                  </div>
+                  <div class="portfolioItem">
+                    <img class="portfolioWeb" src="./img/portfolio/2.png" alt="">
+                    <div class="title">
+                        <h2>
+                        Mode 2 IT
+                      </h2>
+                      </div>
+                    <!-- <div style="width: 30%;" class="column title">
+                      <h2>Acctech LLC</h2>
+                      
+                  </div>
+                  <div style="width: 60%;" class="column description">
+                      <h2>Got to Site</h2>
+                  </div> -->
+            
+                </div>
+                <div class="portfolioItem">
+                    <img class="portfolioWeb" src="./img/portfolio/5.png" alt="">
+                    <div class="title">
+                        <h2>
+                        Pharmacy Tracker
+                      </h2>
+                      </div>
+                    <!-- <div style="width: 30%;" class="column title">
+                      <h2>Acctech LLC</h2>
+                      
+                  </div>
+                  <div style="width: 60%;" class="column description">
+                      <h2>Got to Site</h2>
+                  </div> -->
+            
+                </div>
+                <div class="portfolioItem">
+                    <img class="portfolioWeb" src="./img/portfolio/3.png" alt="">
+                    <div class="title">
+                        <h2>
+                        Mirac
+                      </h2>
+                      </div>
+                    <!-- <div style="width: 30%;" class="column title">
+                      <h2>Acctech LLC</h2>
+                      
+                  </div>
+                  <div style="width: 60%;" class="column description">
+                      <h2>Got to Site</h2>
+                  </div> -->
+            
+                </div>
+          
+                <div class="portfolioItem">
+                    <img class="portfolioWeb" src="./img/portfolio/4.png" alt="">
+                    <div class="title">
+                        <h2>
+                        Trip Together
+                      </h2>
+                      </div>
+                    <!-- <div style="width: 30%;" class="column title">
+                      <h2>Acctech LLC</h2>
+                      
+                  </div>
+                  <div style="width: 60%;" class="column description">
+                      <h2>Got to Site</h2>
+                  </div> -->
+            
+                </div>
+    
+                </section>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="contentSection" id="four" style="display: none;">
+          <div class="innerContainer">
+            <div class="scrollview">
+              <div class="innerContent">
+                <section>
+                  <h1>
+                    My Services
+                  </h1>
+
+                  <h2><i class="fas fa-laptop-code"></i> Web Development</h2>
+                  <div
+                    class="button"
+                    onclick="showPage('five', ['one', 'two', 'three', 'four' ])"
+                  >
+                    <a href="#two">Learn More</a>
+                  </div>
+
+                  <h2><i class="fas fa-pencil-alt"></i> UI/UX Design</h2>
+                  <div
+                    class="button"
+                    onclick="showPage('five', ['one', 'two', 'three', 'four' ])"
+                  >
+                    <a href="#two">Learn More</a>
+                  </div>
+                  <h2><i class="fas fa-laptop-code"></i> Graphic Design</h2>
+                  <div
+                    class="button"
+                    onclick="showPage('five', ['one', 'two', 'three', 'four' ])"
+                  >
+                    <a href="#two">Learn More</a>
+                  </div>
+                  <h2><i class="fas fa-mobile-alt"></i> Mobile Development</h2>
+                  <div
+                    class="button"
+                    onclick="showPage('five', ['one', 'two', 'three', 'four' ])"
+                  >
+                    <a href="#two">Learn More</a>
+                  </div>
+                  <h2><i class="fas fa-database"></i> Database Hosting</h2>
+                  <div
+                    class="button"
+                    onclick="showPage('five', ['one', 'two', 'three', 'four' ])"
+                  >
+                    <a href="#two">Learn More</a>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="contentSection" id="five" style="display: none;">
+          <div class="innerContainer">
+            <div class="scrollview">
+              <div class="innerContent">
+                <section>
+                  <h1>
+                    Contact Me
+                  </h1>
+                  <div class="row">
+                    <div class="column infoContainer">
+                        <div class="infoItem">
+                            <i style="margin-right: 5px;" class="fas fa-phone-alt" ></i> 651-497-6819
+
+                        </div>
+                        <div class="infoItem">
+                            <i style="margin-right: 5px;" class="fas fa-envelope" ></i> romo@acctechllc.com
+
+                        </div>
+                        <div class="infoItem">
+                            <i style="margin-right: 5px;" class="fab fa-linkedin"></i></i> Linked In
+
+                        </div>
+                        <div class="infoItem">
+                            <i style="margin-right: 5px;" class="fab fa-github"></i></i> Github
+
+                        </div>
+                      
+                      </div>
+                    
+                      
+
+                        
+
+                    </div>
+                    <div class="column formContainer">
+                      
+                      <div class="contact__container">
+                        <div class="contact__title">
+        
+                        </div>
+                        <form class="contact__form">
+                                <p>Name</p>
+                                <input class="contact__form-input" type="text">
+        
+                                <p>Email</p>
+                                <input class="contact__form-input" type="text">
+        
+                                <p>Message</p>
+                                <textarea class="contact__form-textarea" type="text"></textarea>
+        
+                                <input type="submit" value="Send message">
+                        </form>
+                </div>
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+
+        <!-- The Modal -->
+        <div id="modal" class=" navModal">
+
+            <div class="modal">
+         
+           
+   
+            <div class="menuItem">
+                <div onclick="closeModal()" class="closeButton">
+                  <i class="far fa-times-circle" style="font-size: 20px;"></i>
+                </div>
+                <div class="modalTitle">
+                    <h2>Menu</h2>
+                </div>
+                <hr class="menuLine">
+
+                
+              <a> </a>
+    
+              <ul>
+                <li>
+                  <a
+                  class="modalMenuItem"
+
+                    onclick="showPage('one', ['two', 'three', 'four', 'five']), closeModal()"
+                    href="#one"
+                  >
+                    <!-- <i
+                      onclick="showPage('one', ['two', 'three', 'four', 'five']), closeModal()"
+                      href="#one"
+                      id="menu-one"
+                      style="color: #44b1b1;"
+                      class="fas fa-user menuIcon"
+                    ></i> -->
+                    About Me
+                  </a>
+                  <hr class="menuLine">
+                </li>
+                <li>
+                  <a
+                  class="modalMenuItem"
+
+                    onclick="showPage('two', ['one', 'three', 'four', 'five']), closeModal()"
+                    href="#two"
+                  >
+                    <!-- <i
+                      onclick="showPage('two', ['one', 'three', 'four', 'five']), closeModal()"
+                      href="#two"
+                      id="menu-two"
+                      class="fas fa-tools menuIcon"
+                    ></i> -->
+                    My Skills
+                  </a>
+                  <hr class="menuLine">
+
+                </li>
+                <li>
+                  <a
+                  class="modalMenuItem"
+
+                    onclick="showPage('three', ['one', 'two', 'four', 'five']), closeModal()"
+                    href="#three"
+                  >
+                    <!-- <i
+                      onclick="showPage('three', ['one', 'two', 'four', 'five']), closeModal()"
+                      href="#three"
+                      id="menu-three"
+                      class="fas fa-briefcase menuIcon"
+                    ></i> -->
+                    My Portfolio
+                  </a>
+                  <hr class="menuLine">
+
+                </li>
+                <li>
+                  <a
+                  class="modalMenuItem"
+
+                    onclick="showPage('four', ['one', 'two', 'three', 'five']), closeModal()"
+                    href="#four"
+                  >
+                    <!-- <i
+                      onclick="showPage('four', ['one', 'two', 'three', 'five']), closeModal()"
+                      href="#four"
+                      id="menu-four"
+                      class="fas fa-laptop menuIcon"
+                    ></i> -->
+                    My Services
+                  </a>
+                  <hr class="menuLine">
+
+                </li>
+                <li>
+                  <a
+                    class="modalMenuItem"
+                    onclick="showPage('five', ['one', 'two', 'three', 'four']), closeModal()"
+                    href="#five"
+                  >
+                    <!-- <i
+                      onclick="showPage('five', ['one', 'two', 'three', 'four']), closeModal()"
+                      href="#one"
+                      id="menu-five"
+                      class="fas fa-envelope menuIcon"
+                    ></i> -->
+
+                    Contact Me
+                  </a>
+                  <hr class="menuLine">
+
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+    
+  </body>
+  <script>
+    function showModal() {
+      document.getElementById("modal").style.display= "block"
+      console.log("modal open");
+      
+    }
+    function closeModal(){
+      document.getElementById("modal").style.display= "none"
+      console.log("modal closed");
+
+    }
+    var current = "one";
+
+    function showPage(p, list) {
+      console.log("Show Page is callled");
+      console.log(list);
+      console.log(list.length);
+
+      var length = list.length;
+
+      for (i = 0; i < length; i++) {
+        document.getElementById(list[i]).style.display = "none";
+        document.getElementById("menu-" + list[i]).style.color =
+          "rgb(163, 163, 163)";
+      }
+
+      //   document.getElementById("content").innerHTML = "Content " + p;
+      document.getElementById(p).style.display = "block";
+      document.getElementById("menu-" + p).style.color = "#44b1b1";
+    }
+    function hidePage() {
+      console.log("hidePage was called");
+    }
+
+    // function setPage(p) {
+    //   console.log(p);
+
+    //   if (p == null) {
+    //     console.log("page was changed: " + p);
+
+    //     return 0;
+    //   } else {
+    //     console.log("page was changed: " + p);
+    //     return p;
+    //   }
+    //   //   return p;
+    // }
+
+    // console.log("Calling the function");
+
+    // var page = setPageNumber()
+  </script>
+</html>
